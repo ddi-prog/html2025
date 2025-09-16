@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- method get: 헤더로 데이터 전송 -->
+    <!-- post : body에 데이터 전송 -->
+    <form action="loginform">
+        <label for="">이름</label>
+        <input type="text" name="name">
+        <br>
+        <label for="">이메일</label>
+        <input type="text" name="email">
+        <input type="submit" value="재출">
+
+        <h2>회원 가입</h2>
+        <!-- 141p -->
+        <form action="register">
+            <fieldset>
+                <legend>필수 항목</legend>
+                <ul>
+                    <li>
+                        <label for="name"> 이름 : <input type="text" name="name"></label>
+                    </li>
+                    <li>
+                        <label for="email"> 이메일 : <input type="email" name="email" id=""></label>
+                    </li>
+                    <li>
+                        <label for="password"> 비밀번호 : <input type="password" name="password" id=""></label>
+                    </li>
+                    <li>
+                        <label for="password2"> 비밀번호 확인 : <input type="password" name="password" id=""></label>
+                    </li>
+                    <li>
+                        <label for="phone"> 전화번호 : <input type="tel" name="phone" id=""></label>
+                    </li>
+                    <li>
+                        <label for="birthday"> 생년월일 : <input type="date" name="birthday" id=""></label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>선택 사항</legend>
+                <ul>
+                    <li>
+                        <label for="mailling">메일 수신</label>
+                        <input type="radio" name="mailling" id="mailling_yes" value="mailling_yes">
+                        <label for="mailling">메일 거부</label>
+                        <input type="radio" name="mailling" id="mailling_no" value="mailling_no">
+                    </li>
+                    <li>
+                        <input type="checkbox" name="favorite" id="fa_sports" value="sprots"><label for="">스포츠</label>
+                        <input type="checkbox" name="favorite" id="fa_it" value="it"><label for="">디지털기기</label>
+                        <input type="checkbox" name="favorite" id="fa_movie" value="movie"><label for="">영화</label>
+                    </li>
+                    <li>
+                        <label for="gender">성별</label>
+                        <select name="" id="gender">
+                            <option value="male">남자</option>
+                            <option value="female">여자</option>
+                        </select>
+                    </li>
+                </ul>
+            </fieldset>
+            <label for="">메모</label><br>
+            <textarea name="memo" id="momo" cols="40" rows="8"></textarea>
+            <br>
+            <input type="submit" value="재출">
+            <input type="reset" value="초기화">
+        </form>
+    </form>
+</body>
+</html>
