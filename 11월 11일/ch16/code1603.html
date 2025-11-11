@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자리 배치도</h1>
+    <script>
+        let mumNum = parseInt(prompt('입장객은 몇 명인가요?'));
+        let colNum = parseInt(prompt('한 줄에 몇 명씩 않습니까?'));
+
+        if (mumNum % colNum === 0){
+            rowNum = memNum / colNum;
+        }
+        else {
+            rowNum = parseInt(mumNum / colNum) + 1;
+        }
+        document.write(`모두 ${rowNum}개의 줄이 필요합니다.`);
+    </script>
+</body>
+</html>
