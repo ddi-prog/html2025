@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/code1702.css">
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="changeBb('green')">green</a></li>
+        <li><a href="#" onclick="changeBb('orange')">orange</a></li>
+        <li><a href="#" onclick="changeBb('purple')">purple</a></li>
+    </ul>
+    <div id="result"></div>
+    <script>
+        function changeBb(color){
+            let result = document.querySelector('#result');
+            result.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

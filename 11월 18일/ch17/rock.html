@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    let comChoice = ['가위','바위','보']
+    let PlayChoice = ['가위','바위','보']
+    let ranNum = Math.floor(Math.random()*3);
+    console.log("컴퓨터 : ", comChoice[ranNum] );
+    let MyChoice = parseInt(prompt("무엇을 내시겠습니까?"));  
+    console.log("플레이어 : ", MyChoice );
+		
+    if (ranNum === PlayChoice.indexOf(MyChoice)){
+        document.write("무승부입니다.");
+    }
+    else if (comChoice[ranNum] == "보"){
+        (MyChoice == "가위") ? document.write("승리") : document.write("패배")
+    }
+     else if (comChoice[ranNum] == "가위"){
+        (MyChoice == "바위") ? document.write("승리") : document.write("패배")
+    }
+     else if (comChoice[ranNum] == "바위"){
+        (MyChoice == "보") ? document.write("승리") : document.write("패배")
+    }
+  </script>
+</body>
+</html>
